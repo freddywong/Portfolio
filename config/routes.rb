@@ -1,6 +1,17 @@
+# == Route Map
+#
+#   Prefix Verb URI Pattern         Controller#Action
+#     root GET  /                   pages#home
+#    about GET  /about(.:format)    pages#about
+# projects GET  /projects(.:format) pages#projects
+#
+
 Rails.application.routes.draw do
-  resources :pages
+  
   root "pages#home"
+  get 'home' => 'pages#home'
+  get 'about' => 'pages#about'
+  get 'projects' => 'pages#projects'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
