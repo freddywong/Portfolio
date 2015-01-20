@@ -125,6 +125,12 @@ body {
   width: auto; 
   margin-top: -20px 
 }
+.eng-flag {
+  padding-left: 40px;
+}
+.jap-flag {
+  padding-left: 10px;
+}
 /*
  * Cover
  */
