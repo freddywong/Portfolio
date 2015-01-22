@@ -1,5 +1,5 @@
-<div class="site-wrapper">
-
+<%= render 'home_site_wrapper' if @home_page %>
+<%= render 'site_wrapper' unless @home_page %>
   <div class="site-wrapper-inner">
 
     <div class="cover-container">
