@@ -1,11 +1,44 @@
+<!-- Full Page Image Background Carousel Header -->
+<header id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-  <div class="project-slider">
-    <div><%= image_tag 'evently-imac.jpg', class: 'slide-picture-1'%><p class="slide-text-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam esse, veritatis asperiores porro tenetur corrupti odio cum perferendis voluptatem, blanditiis ipsum, corporis labore. Repellendus culpa itaque veritatis et, delectus ullam.</p></div>
-    <div><%= image_tag 'carbonatr-macbook.jpg', class: 'slide-picture-2' %></div>
-  </div>
-  <div class="project-text">
-    <div><p class="lead"></p></div>
-    <div><p class="lead">text 2</p></div>
-  </div>
+    <!-- Wrapper for Slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <!-- Set the first background image using inline CSS below. -->
+            <div class="fill" id="first-slide"></div>
+            <div class="carousel-caption">
+                <h2>Caption 1</h2>
+            </div>
+        </div>
+        <div class="item">
+            <!-- Set the second background image using inline CSS below. -->
+            <div class="fill" id="second-slide"></div>
+            <div class="carousel-caption">
+                <h2>Caption 2</h2>
+            </div>
+        </div>
+        <div class="item">
+            <!-- Set the third background image using inline CSS below. -->
+            <div class="fill" id="third-slide"></div>
+            <div class="carousel-caption">
+                <h2>Caption 3</h2>
+            </div>
+        </div>
+    </div>
 
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+
+</header>
 
