@@ -1,44 +1,47 @@
 <!-- Full Page Image Background Carousel Header -->
 <header id="myCarousel" class="carousel slide">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
 
-    <!-- Wrapper for Slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <!-- Set the first background image using inline CSS below. -->
-            <div class="fill" id="first-slide"></div>
-            <div class="carousel-caption">
-                <h2>Caption 1</h2>
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the second background image using inline CSS below. -->
-            <div class="fill" id="second-slide"></div>
-            <div class="carousel-caption">
-                <h2>Caption 2</h2>
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" id="third-slide"></div>
-            <div class="carousel-caption">
-                <h2>Caption 3</h2>
-            </div>
+<!-- Wrapper for Slides -->
+<div class="carousel-inner">
+  <div class="item active">
+    <!-- Set the first background image using inline CSS below. -->
+    <div class="fill" id="first-slide"></div>
+    <div class="carousel-caption" id="first-slide-caption">
+        <h2>Evently</h2>
+        <p class="tech-text">Ruby on Rails, Multiple APIs, HTML5, CSS</p>
+        <p class="paragraph">Evently was created to be an inclusive event space where users can track events they have joined or created</p>
+        <div>
+        <%= link_to 'View on Github',{controller: "pages", action: "projects"}, class: "evently-project-btn" %>
+        <%= link_to 'Website',{controller: "pages", action: "projects"}, class: "evently-project-btn" %>
         </div>
     </div>
+</div>
+<div class="item">
+    <!-- Set the second background image using inline CSS below. -->
+    <div class="fill" id="second-slide"></div>
+    <div class="carousel-caption" id="second-slide-caption">
+        <h2>Carbonatr</h2>
+        <p class="tech-text">Ruby on Rails, Javascript, Google Maps API, jQuery, AJAX</p>
+        <p class="paragraph">Carbonatr helps you to dynamically calculate your carbon emissions and the cost it will take to offset it.</p>
+        <%= link_to 'View on Github',{controller: "pages", action: "projects"}, class: "carbonatr-project-btn" %>
+        <%= link_to 'Website',{controller: "pages", action: "projects"}, class: "evently-project-btn" %>
+    </div>
+</div>
+</div>
 
-    <!-- Controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-    </a>
+<!-- Controls -->
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+</a>
 
 </header>
 
