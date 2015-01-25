@@ -50,15 +50,15 @@ body {
 }
 
 #first-slide {
-  background-image: url('evently-imac-modified.png');
+  background-image: url('<%= asset_path("evently-imac-modified.png") %> ');
 }
 
 #second-slide {
-  background-image: url('carbonatr-macbook.jpg');
+  background-image: url('<%= asset_path("carbonatr-macbook.jpg") %> ');
 }
 
 #third-slide {
-  background-image: url('carbonatr-macbook.jpg');
+  background-image: url('<%= asset_path("carbonatr-macbook.jpg") %> ');
 }
 
 .tech-text {
@@ -124,7 +124,7 @@ body {
 
 
 #home-slide {
-  background: url("tokyo-office.jpg") no-repeat center center fixed; 
+  background: url('<%= asset_path("tokyo-office.jpg") %> ') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
