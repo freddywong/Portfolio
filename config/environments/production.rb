@@ -6,12 +6,12 @@ Rails.application.configure do
     :address   => "smtp.mandrillapp.com",
     :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
     :enable_starttls_auto => true, # detects and uses STARTTLS
-    :user_name => ENV["PORTFOLIO_MANDRILL_USERNAME"],
-    :password  => ENV["PORTFOLIO_MANDRILL_PASSWORD"], # SMTP password is any valid API key
+    :user_name => ENV["MANDRILL_USERNAME"],
+    :password  => ENV["MANDRILL_APIKEY"], # SMTP password is any valid API key
     :authentication => :login, # Mandrill supports 'plain' or 'login'
     :domain => 'glacial-taiga-8222.herokuapp.com', # your domain to identify your server when connecting
   }
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { host: 'glacial-taiga-8222.herokuapp.com' }
   config.cache_classes = true
 
   # Eager load code on boot. This eager loads most of Rails and
