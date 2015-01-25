@@ -9,7 +9,7 @@ Rails.application.configure do
     :user_name => ENV["PORTFOLIO_MANDRILL_USERNAME"],
     :password  => ENV["PORTFOLIO_MANDRILL_PASSWORD"], # SMTP password is any valid API key
     :authentication => :login, # Mandrill supports 'plain' or 'login'
-    :domain => 'http://glacial-taiga-8222.herokuapp.com/', # your domain to identify your server when connecting
+    :domain => 'glacial-taiga-8222.herokuapp.com', # your domain to identify your server when connecting
   }
   config.action_mailer.raise_delivery_errors = true
   config.cache_classes = true
