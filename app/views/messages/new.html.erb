@@ -1,23 +1,33 @@
-<div style="margin-top:200px;">
-<%= form_for @message, url: contact_path do |message_form| %>
-  <fieldset>
-    <div class="field">
-      <%= message_form.text_field :name, placeholder: "Name" %>
+<header id="myCarousel" class="carousel slide"> 
+  <div class="carousel-inner">
+    <div class="item active">
+    <div class="fill" id="contact-slide"></div>
+      <div class="carousel-caption" id="contact-form">
+          <%= form_for @message, url: contact_path do |message_form| %>
+          <h2 class="contact-title">Contact Me</h2> 
+          <fieldset>
+            <div class="field">
+              <%= message_form.text_field :name, placeholder: "Name", class: "contact-field" %>
+            </div>
+
+            <div class="field">
+              <%= message_form.email_field :email, placeholder: "Email", class: "contact-field" %>
+            </div>
+
+            <div class="field">
+              <%= message_form.text_area :content, placeholder: "Message", class:"contact-field", id:"message-field" %>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="field">
+              <%= message_form.submit "Send", class:"contact-btn" %>
+            </div>
+          </fieldset>
+          <% end %>
+        </end>
+      </div>
+
     </div>
-    
-    <div class="field">
-      <%= message_form.email_field :email, placeholder: "Email"%>
-    </div>
-    
-    <div class="field">
-      <%= message_form.text_area :content, placeholder: "Message"%>
-    </div>
-  </fieldset>
-  
-  <fieldset>
-    <div class="field">
-      <%= message_form.submit "Send" %>
-    </div>
-  </fieldset>
-<% end %>
-</end>
+  </div>
+</header>

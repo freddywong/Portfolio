@@ -1,6 +1,7 @@
-//= depend_on_asset "evently-imac-modified.png"
-//= depend_on_asset "carbonatr-macbook.jpg"
+//= depend_on_asset "evently-imac-compressed.png"
+//= depend_on_asset "carbonatr-macbook-compressed.jpg"
 //= depend_on_asset "tokyo-office.jpg"
+//= depend_on_asset "fujisan.jpg"
 
 
 html,
@@ -55,15 +56,15 @@ body {
 }
 
 #first-slide {
-  background-image: url('<%= asset_path("evently-imac-modified.png") %> ');
+  background-image: url('<%= asset_path("evently-imac-compressed.png") %> ');
 }
 
 #second-slide {
-  background-image: url('<%= asset_path("carbonatr-macbook.jpg") %> ');
+  background-image: url('<%= asset_path("carbonatr-macbook-compressed.jpg") %> ');
 }
 
 #third-slide {
-  background-image: url('<%= asset_path("carbonatr-macbook.jpg") %> ');
+  background-image: url('<%= asset_path("carbonatr-macbook-compressed.jpg") %> ');
 }
 
 .tech-text {
@@ -130,6 +131,14 @@ body {
 
 #home-slide {
   background: url('<%= asset_path("tokyo-office.jpg") %> ') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#contact-slide {
+  background: url('<%= asset_path("fujisan.jpg") %> ') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

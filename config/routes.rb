@@ -2,8 +2,11 @@
 #
 #   Prefix Verb URI Pattern         Controller#Action
 #     root GET  /                   pages#home
+#     home GET  /home(.:format)     pages#home
 #    about GET  /about(.:format)    pages#about
 # projects GET  /projects(.:format) pages#projects
+#  contact GET  /contact(.:format)  messages#new
+#          POST /contact(.:format)  messages#create
 #
 
 Rails.application.routes.draw do
