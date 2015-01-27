@@ -1,2 +1,21 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<header id="myCarousel" class="carousel slide"> 
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="fill" id="about-slide"></div>
+      <div class="carousel-caption" id="about-caption">
+        <%= link_to image_tag("profile-picture.jpg", class: "about-picture" ),  {:action => 'home', :controller => 'pages'} %>
+        <p class="about-paragraph">I'm a full stack developer interested in creating powerful web applications utilising Ruby on Rails and Javascript.</p>
+        <p class="about-paragraph">As a recent graduate of the 3-month Web Development Immersive program held at General Assembly, I have gained skills in HTML5, CSS, Ruby on Rails and a variety of Javascript libraries and frameworks.</p>
+        <p class="about-paragraph" id="third-paragraph">This has enabled me to create a wide range of diverse and helpful web apps such as Evently, Carbonatr and Bikely.</p>
+        <%= link_to image_tag("linkedin.png", class: "social-icons" ), "https://www.linkedin.com/pub/frederick-wong/78/472/6a8" %>
+        <%= link_to image_tag("github.png", class: "social-icons" ),  "https://github.com/freddywong" %>
+        <%= link_to image_tag("twitter.png", class: "social-icons" ),  "https://twitter.com/FreddykfWong" %>
+        <p class="about-paragraph">
+          <%= link_to 'See Apps',{controller: "pages", action: "projects"}, class: "about-project-btn" %>
+        </p>
+
+    </div>
+  </div>
+</header>
+
+au.linkedin.com/pub/frederick-wong/78/472/6a8/

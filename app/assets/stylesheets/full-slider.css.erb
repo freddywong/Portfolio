@@ -2,6 +2,7 @@
 //= depend_on_asset "carbonatr-macbook-compressed.jpg"
 //= depend_on_asset "tokyo-office.jpg"
 //= depend_on_asset "fujisan.jpg"
+//= depend_on_asset "fuji-morning.jpg"
 
 
 html,
@@ -137,6 +138,14 @@ body {
   background-size: cover;
 }
 
+#about-slide {
+  background: url('<%= asset_path("fuji-morning.jpg") %> ') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #contact-slide {
   background: url('<%= asset_path("fujisan.jpg") %> ') no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -154,6 +163,7 @@ body {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border: 3px solid white;
+  margin-top: 30px;
 }
 
 .home-project-btn:hover {
