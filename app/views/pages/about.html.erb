@@ -4,12 +4,17 @@
       <div class="fill" id="about-slide"></div>
       <div class="carousel-caption" id="about-caption">
         <%= link_to image_tag("profile-picture.jpg", class: "about-picture" ),  {:action => 'home', :controller => 'pages'} %>
-        <p class="about-paragraph">I'm a full stack developer interested in creating powerful web applications utilising Ruby on Rails and Javascript.</p>
-        <p class="about-paragraph">As a recent graduate of the 3-month Web Development Immersive program held at General Assembly, I have gained skills in HTML5, CSS, Ruby on Rails and a variety of Javascript libraries and frameworks.</p>
-        <p class="about-paragraph" id="third-paragraph">This has enabled me to create a wide range of diverse and helpful web apps such as Evently, Carbonatr and Bikely.</p>
-        <%= link_to image_tag("linkedin.png", class: "social-icons" ), "https://www.linkedin.com/pub/frederick-wong/78/472/6a8" %>
+
+        <p class="about-paragraph">Hi there! I'm a full stack developer with some killer skills in Ruby on Rails, Backbone.js and JavaScript. From when I was a wee lil' lad, I've had an intense interest in all things related to science and technology. I loved taking apart computers and understanding the inner workings of anything technical. So its safe to say that I'm a full time nerd!</p>
+
+        <p class="about-paragraph" id="second-paragraph">This has culminated into a Master of IT and the completion of General Assembly's Web Development Immersive program. With this, I feel confident to tackle any challenge in HTML5, CSS, Ruby, Ruby on Rails, JavaScript, jQuery, AJAX, Backbone.js, Underscore.js., Bootstrap, SQL, Git and Heroku. I'm also self-studying Swift and Objective-C to create apps for mobiles and wearables.</p>
+                                <%= link_to image_tag("linkedin.png", class: "social-icons" ), "https://www.linkedin.com/pub/frederick-wong/78/472/6a8" %>
         <%= link_to image_tag("github.png", class: "social-icons" ),  "https://github.com/freddywong" %>
         <%= link_to image_tag("twitter.png", class: "social-icons" ),  "https://twitter.com/FreddykfWong" %>
+
+        <p class="about-paragraph" id="third-paragraph">Feel free to go ahead and try some of the helpful and fun web apps I've created or check me out on LinkedIn where you can learn more about me.</p>
+
+
         <p class="about-paragraph">
           <%= link_to 'See Apps',{controller: "pages", action: "projects"}, class: "about-project-btn" %>
         </p>
@@ -18,4 +23,3 @@
   </div>
 </header>
 
-au.linkedin.com/pub/frederick-wong/78/472/6a8/

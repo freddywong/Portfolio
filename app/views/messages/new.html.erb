@@ -4,18 +4,18 @@
     <div class="fill" id="contact-slide"></div>
       <div class="carousel-caption" id="contact-form">
           <%= form_for @message, url: contact_path do |message_form| %>
-          <h2 class="contact-title">Let's Talk</h2> 
+          <h2 class="contact-title">Let's get in touch!</h2> 
           <fieldset>
             <div class="field">
-              <%= message_form.text_field :name, placeholder: "Name", class: "contact-field" %>
+              <%= message_form.text_field :name, placeholder: "What do your friends call you?", class: "contact-field" %>
             </div>
 
             <div class="field">
-              <%= message_form.email_field :email, placeholder: "Email", class: "contact-field" %>
+              <%= message_form.email_field :email, placeholder: "Where can I email you back?", class: "contact-field" %>
             </div>
 
             <div class="field">
-              <%= message_form.text_area :content, placeholder: "Message", class:"contact-field", id:"message-field" %>
+              <%= message_form.text_area :content, placeholder: "What's on your mind?", class:"contact-field", id:"message-field" %>
             </div>
           </fieldset>
 
