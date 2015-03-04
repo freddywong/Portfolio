@@ -8,7 +8,7 @@
 html,
 body {
   height: 100%;
-  font-family: lato;
+  font-family: montserrat, lato;
 }
 
 .carousel,
@@ -21,6 +21,11 @@ body {
   height: 100%;
 }
 
+.carousel-control .icon-prev, 
+.carousel-control .icon-next {
+    font-size: 130px;
+}
+
 .navbar-inverse {
   background-color: rgba(0,0,0,0.5);
   border-color: rgba(0,0,0,0);
@@ -28,7 +33,7 @@ body {
 
 #home-caption {
   text-shadow: none;
-  font-family: lato, helvetica;
+  font-family: montserrat, lato, helvetica;
   color:#fff;  
   width: 700px;
   height: 300px;
@@ -65,7 +70,9 @@ body {
 }
 
 #third-slide {
-  background-image: url('<%= asset_path("carbonatr-macbook-compressed.jpg") %> ');
+  background-image: url('<%= asset_path("vocabulate-screen-compressed-v4.jpg") %> ');
+  background-position: 0px 0px;
+
 }
 
 .tech-text {
@@ -74,7 +81,7 @@ body {
 #first-slide-caption {
   text-align: left;
   text-shadow: none;
-  font-family: lato, helvetica;
+  font-family: montserrat, lato, helvetica;
   color:#5e6668;  
   width: 350px;
   height: 300px;
@@ -88,13 +95,27 @@ body {
 #second-slide-caption {
   text-align: left;
   text-shadow: none;
-  font-family: lato, helvetica;
+  font-family: montserrat, lato, helvetica;
   color:#5e6668;  
   width: 350px;
   height: 300px;
   position:fixed;
   top: 45%;
   left: 75%;
+  margin-top: -150px;
+  margin-left: -175px;    
+}
+
+#third-slide-caption {
+  text-align: left;
+  text-shadow: none;
+  font-family: montserrat, lato, helvetica;
+  color:#5e6668;  
+  width: 500px;
+  height: 300px;
+  position:fixed;
+  top: 33%;
+  left: 67%;
   margin-top: -150px;
   margin-left: -175px;    
 }
@@ -156,7 +177,7 @@ body {
 
 .home-project-btn {
   border-radius: 5px;  
-  font-family: Arial;
+  font-family: montserrat, Arial;
   color: #ffffff;
   font-size: 29px;
   background: rgba(255,255,255,0);
@@ -201,6 +222,10 @@ body {
 .evently-project-btn:hover {
   text-decoration: none;
   color: #5e6668;
+}
+
+#vocabulate-website-btn {
+  margin-top: 50px;
 }
 
 .fill {

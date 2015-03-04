@@ -9,15 +9,15 @@
 
 <!-- Wrapper for Slides -->
 <div class="carousel-inner">
-  <div class="item active">
-    <!-- Set the first background image using inline CSS below. -->
-    <div class="fill" id="first-slide"></div>
-    <div class="carousel-caption" id="first-slide-caption">
-        <h2>Evently</h2>
-        <p class="tech-text">Ruby on Rails, Multiple APIs, HTML5, CSS</p>
-        <p class="paragraph">Evently was created to be an inclusive event space where users can track events they have joined or created</p>
-        <%= link_to 'View on Github',{controller: "pages", action: "projects"}, class: "evently-project-btn" %>
-        <%= link_to 'Website',{controller: "pages", action: "projects"}, class: "evently-project-btn" %>
+<div class="item active">
+    <!-- Set the third background image using inline CSS below. -->
+    <div class="fill" id="third-slide"></div>
+    <div class="carousel-caption" id="third-slide-caption">
+        <h2>Vocabulate Me</h2>
+        <p class="tech-text">Backbone.js, Ruby on Rails, jQuery, JavaScript, Bootstrap </p>
+        <p class="paragraph">Vocabulate Me's dynamic learning engine helps you to learn a foreign vocabulary faster and with less hassle.</p>
+        <%= link_to 'View on Github',"https://github.com/freddywong/vocabulate", class: "evently-project-btn" %>
+        <%= link_to 'Website', "http://vocabulate.me", class: "evently-project-btn", id:"vocabulate-website-btn" %>
     </div>
 </div>
 <div class="item">
@@ -27,8 +27,19 @@
         <h2>Carbonatr</h2>
         <p class="tech-text">Ruby on Rails, Javascript, Google Maps API, jQuery, AJAX</p>
         <p class="paragraph">Carbonatr helps you to dynamically calculate your carbon emissions and the cost it will take to offset it.</p>
-        <%= link_to 'View on Github',{controller: "pages", action: "projects"}, class: "carbonatr-project-btn" %>
-        <%= link_to 'Website',{controller: "pages", action: "projects"}, class: "evently-project-btn" %>
+        <%= link_to 'View on Github', "https://github.com/freddywong/FreddyMike", class: "carbonatr-project-btn" %>
+        <%= link_to 'Website',"http://carbonatorapp.herokuapp.com/", class: "evently-project-btn" %>
+    </div>
+</div>
+  <div class="item">
+    <!-- Set the first background image using inline CSS below. -->
+    <div class="fill" id="first-slide"></div>
+    <div class="carousel-caption" id="first-slide-caption">
+        <h2>Evently</h2>
+        <p class="tech-text">Ruby on Rails, Multiple APIs, Ruby Gems, HTML5, CSS</p>
+        <p class="paragraph">Evently was created to be an inclusive event space where users can track events they have joined or created</p>
+        <%= link_to "View on Github", "https://github.com/vitalbone/FreddynVito", class: "evently-project-btn" %>
+        <%= link_to 'Website', "http://tranquil-peak-2314.herokuapp.com/", class: "evently-project-btn" %>
     </div>
 </div>
 </div>
@@ -42,4 +53,6 @@
 </a>
 
 </header>
+
+
 
